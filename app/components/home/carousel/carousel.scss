@@ -1,0 +1,26 @@
+.carousel.slide {
+  height: 350px;
+
+  .carousel-inner {
+    height: 350px;
+
+    .item {
+      height: 350px;
+    }
+  }
+
+  .carousel-control {
+    background: none;
+    width: 45px;
+  }
+  .carousel-control.left {
+    background: url('images/bt-prev.png') center center no-repeat;
+  }
+  .carousel-control.right {
+    background: url('images/bt-next.png') center center no-repeat;
+  }
+  .carousel-control span {
+    display: none;
+  }
+
+}

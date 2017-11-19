@@ -1,0 +1,42 @@
+.home {
+  font-family: 'Open Sans';
+  font-weight: 500;
+  width: 100%;
+
+  .home__carousel-wrapper {
+    background-color: #ffce55;
+  }
+
+  .home__text-block {
+    padding: 45px 35px 45px 35px;
+    font-size: 18px;
+    text-align: justify;
+    color: #233642;
+    span {
+      font-weight: 700;
+    }
+  }
+
+  .home__text-wrapper.grey {
+    background-color: #d8dfe4;
+    .home__text-block {
+      h2 {
+        margin: 0px 0 28px 0;
+        font-family: 'Open Sans';
+        font-weight: 700;
+        font-size: 24px;
+        text-transform: uppercase;
+        text-align: center;
+      }
+      .list-group-item-heading {
+        font-size: 17px;
+        text-transform: uppercase;
+        font-weight: 600;
+      }
+      .list-group-item-text {
+        font-size: 16px;
+      }
+    }
+  }
+
+}

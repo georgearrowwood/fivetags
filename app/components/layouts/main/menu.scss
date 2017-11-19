@@ -1,0 +1,41 @@
+@import "./global.scss";
+
+.main-menu {
+  padding: 0;
+  list-style-type: none;
+  float: right;
+  @include respond-to(small-medium-scr) {
+    padding: 0 0 0 30px;
+    float: left;
+  }
+  li {
+    display: inline;
+    margin-left: 6px;
+    @include respond-to(small-medium-scr) { display: block; }
+    a {
+      font-family: 'Open Sans';
+      font-weight: 600;
+      font-size: 15px;
+      text-transform: uppercase;
+      color: #334450;
+      line-height: 30px;
+      @include respond-to(small-medium-scr) {
+        font-size: 21px;
+        font-weight: 500;
+        line-height: 40px;
+      }
+    }
+    a:hover {
+      text-decoration: none;
+      border-bottom: 2px solid #ea4031;
+      padding-bottom: 3px;
+      @include respond-to(small-medium-scr) { border-bottom: 3px solid #ea4031; }
+    }
+    a.active {
+      text-decoration: none;
+      border-bottom: 2px solid #ea4031;
+      padding-bottom: 3px;
+      @include respond-to(small-medium-scr) { border-bottom: 3px solid #ea4031; }
+    }
+  }
+}

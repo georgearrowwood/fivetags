@@ -1,0 +1,67 @@
+@import "./global.scss";
+
+.header {
+  font-family: 'Open Sans';
+  font-weight: 600;
+
+  .header__top-line {
+    background-color: #d1d8de;
+
+    .header__top-line-content {
+      height: 30px;
+
+      .header__email {
+        float:right;
+        margin: 1px 5px 0 0;
+        line-height: 29px;
+
+        a {
+          color: #ea4031;
+          margin-left: 12px;
+        }
+      }
+    }
+  }
+  .header__main-line {
+    .header__hamburger {
+      width: 41px;
+      height: 41px;
+      display: none;
+      float: left;
+      margin: 26px 7px 0 5px;
+      background: url('images/menu-m.png') center 0px no-repeat;
+      @include respond-to(small-medium-scr) { display: block; }
+    }
+    .header__hamburger:hover {
+      cursor: pointer;
+    }
+    .header__hamburger--opened {
+      background: url('images/menu-m-opened.png') center 0px no-repeat;
+    }
+
+    .header__logo {
+      height: 100px;
+      width: 165px;
+      float: left;
+      margin: 0 0 0 5px;
+      @include respond-to(small-medium-scr) { height: 90px; }
+      img {
+        margin-top: 30px;
+        @include respond-to(small-medium-scr) { margin-top: 27px; }
+      }
+    }
+    .header__menu {
+      margin: 35px 5px 0 0;
+      float: right;
+      width: 400px;
+      @include respond-to(small-medium-scr) {
+        float: left;
+        margin: 0 0 0 0;
+        display: none;
+      }
+    }
+    .header__menu--opened {
+      display: block;
+    }
+  }
+}

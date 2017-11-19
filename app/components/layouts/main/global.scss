@@ -1,0 +1,25 @@
+$break-small: 460px;
+$break-large: 650px;
+
+@mixin transition($duration) {
+  -webkit-transition-duration: $duration;
+  -moz-transition-duration: $duration;
+  -ms-transition-duration: $duration;
+  -o-transition-duration: $duration;
+  transition-duration: $duration;
+}
+
+@mixin respond-to($media) {
+  @if $media == small-scr {
+    @media only screen and (max-width: $break-small) { @content; }
+  }
+  @else if $media == medium-scr {
+    @media only screen and (min-width: $break-small + 1) and (max-width: $break-large - 1) { @content; }
+  }
+  @else if $media == small-medium-scr {
+    @media only screen and (max-width: $break-large - 1) { @content; }
+  }
+  @else if $media == large-scr {
+    @media only screen and (min-width: $break-large) { @content; }
+  }
+}

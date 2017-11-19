@@ -1,0 +1,114 @@
+@import "../../layouts/main/global.scss";
+
+.slide-one {
+  width: 100%;
+  height: 100%;
+  position: relative;
+
+  .slide-one__model-one {
+    position: absolute;
+    bottom: -10px;
+    @include respond-to(large-scr) {
+      left: -30px;
+      width: 300px;
+      height: 330px;
+    }
+    @include respond-to(small-scr) {
+      left: -70px;
+      width: 260px;
+      height: 290px;
+    }
+    @include respond-to(small-medium-scr) {
+      left: -70px;
+      width: 260px;
+      height: 290px;
+    }
+    @include transition(0.6s);
+    img {
+      width: 100%;
+    }
+  }
+
+  .slide-one__text-bar {
+    position: absolute;
+    background-color: #ea4031;
+    bottom: -20px;
+    width: 8px;
+    height: 120px;
+
+    @include respond-to(large-scr) {
+      right: 275px;
+    }
+    @include respond-to(small-scr) {
+      right: 150px;
+    }
+    @include respond-to(small-medium-scr) {
+      right: 225px;
+    }
+    @include transition(0.6s);
+  }
+
+  .slide-one__text-title {
+    position: absolute;
+    font-family: 'Open Sans';
+    font-weight: 700;
+    font-size: 34px;
+    line-height: 42px;
+    text-transform: uppercase;
+    right: 0px;
+    bottom: 150px;
+    width: 90px;
+    height: 130px;
+    background: rgba(255, 206, 85, 0.7);
+    @include transition(0.9s);
+  }
+
+  .slide-one__text-box {
+    position: absolute;
+    font-family: 'Open Sans';
+    font-weight: 500;
+    font-size: 15px;
+    bottom: -20px;
+    height: 80px;
+    background: rgba(255, 206, 85, 0.7);
+    span {
+      font-weight: 700;
+    }
+    @include respond-to(large-scr) {
+      right: 80px;
+      width: 180px;
+    }
+    @include respond-to(small-scr) {
+      right: -10px;
+      width: 170px;
+    }
+    @include respond-to(small-medium-scr) {
+      right: 40px;
+      width: 170px;
+    }
+    @include transition(0.6s);
+  }
+}
+
+.animate-obj .slide-one {
+  .slide-one__model-one {
+    @include respond-to(large-scr) { left: 50px; }
+    @include respond-to(small-scr) { left: -20px; }
+    @include respond-to(small-medium-scr) { left: -10px; }
+  }
+  .slide-one__text-bar {
+    @include respond-to(large-scr) { bottom: 155px; }
+    @include respond-to(small-scr) { bottom: 155px; }
+    @include respond-to(small-medium-scr) { bottom: 155px; }
+  }
+  .slide-one__text-title {
+    @include respond-to(large-scr) { right: 170px; }
+    @include respond-to(small-scr) { right: 60px; }
+    @include respond-to(small-medium-scr) { right: 120px; }
+  }
+  .slide-one__text-box {
+    @include respond-to(large-scr) { bottom: 70px; }
+    @include respond-to(small-scr) { bottom: 40px; }
+    @include respond-to(small-medium-scr) { bottom: 60px; }
+  }
+}
