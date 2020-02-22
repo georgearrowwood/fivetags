@@ -24,6 +24,8 @@ module.exports = {
     extensions: ['.js', '.jsx'],
   },
 
+  mode: "development",
+  
   target: 'node',
   externals: [
     nodeExternals({
@@ -35,7 +37,7 @@ module.exports = {
   ],
 
   module: {
-    loaders: [
+    rules: [
       { test: /\.(js|jsx)$/, exclude: /node_modules/, loader: 'babel-loader' },
       { test: /\.(css|scss)$/, loader: 'null-loader' },
       {

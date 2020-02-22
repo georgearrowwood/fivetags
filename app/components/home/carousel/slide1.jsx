@@ -1,12 +1,12 @@
 import React from 'react';
 
-import ModelImage from './images/model-1.png';
 import './slide1.scss';
+// import ModelImage from './images/model-1.png';
 
 export default () => (
   <div className="slide-one">
     <div className="slide-one__model-one">
-      <img src={ModelImage} alt="model one" />
+      {/* <img src={ModelImage} alt="model one" /> */}
     </div>
     <div className="slide-one__text-bar" />
     <div className="slide-one__text-title">

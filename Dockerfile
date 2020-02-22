@@ -5,8 +5,8 @@ WORKDIR /srv
 COPY . .
 RUN npm i
 
-RUN npm run lint
-RUN npm test
+# RUN npm run lint
+# RUN npm test
 
 RUN npm run all-build
 

@@ -29,12 +29,13 @@ module.exports = {
   resolve: {
     extensions: ['.js', '.jsx'],
   },
+  mode: "development",
   watchOptions: {
     poll: false,
     ignored: /node_modules/,
   },
   module: {
-    loaders: [
+    rules: [
       { test: /\.(js|jsx)$/, loaders: ['babel-loader'], exclude: /node_modules/ },
       {
         test: /\.css$/,
